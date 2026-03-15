@@ -3,261 +3,305 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CubbyLearn Animal Explorer</title>
+  <title>CubbyLearn | Animal Explorer</title>
   <meta
     name="description"
-    content="CubbyLearn Animal Explorer is a playful animal learning game for early learners with offline-friendly play, no ads, and a parent-friendly experience."
+    content="CubbyLearn creates playful learning games for early learners. Discover Animal Explorer, watch gameplay, and download the app."
   />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
-      <a class="brand-lockup" href="#">
-        <img src="images/logo.png" alt="CubbyLearn Animal Explorer icon" class="brand-icon" />
-        <span class="brand-name">CubbyLearn</span>
+      <a href="#top" class="brand">
+        <img src="images/cubbylearn-logo.png" alt="CubbyLearn" class="brand-logo" />
       </a>
 
-      <nav class="nav-links">
-        <a href="#features">Features</a>
-        <a href="#videos">Videos</a>
-        <a href="#parents">Parents</a>
-        <a href="#updates">Updates</a>
-      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-      <a class="btn btn-primary" href="#download">Download</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#features">Modes</a>
+        <a href="#parents">Parents</a>
+        <a href="#download" class="nav-download">Download</a>
+      </nav>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <div class="hero-bg"></div>
       <div class="hero-overlay"></div>
 
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="hero-pill">Playful Animal Learning</div>
+          <div class="eyebrow">CubbyLearn presents</div>
 
           <img
+            src="images/animal-explorer-banner.png"
+            alt="Animal Explorer"
             class="hero-banner"
-            src="images/banner.png"
-            alt="CubbyLearn Animal Explorer"
           />
 
-          <h1 class="hero-heading">
-            A bright, playful world where early learners can discover animals through fun, simple exploration.
+          <h1 class="hero-title">
+            Playful animal learning for curious young explorers.
           </h1>
 
           <p class="hero-text">
-            CubbyLearn Animal Explorer is designed to feel friendly, easy to use, and parent-approved —
-            with no ads, offline-friendly play, and a strong focus on joyful discovery.
+            CubbyLearn is a brand built around simple, joyful learning games for young
+            children. Animal Explorer is the first game in that world — designed to help
+            kids learn animals through play, listening, speaking, matching, and discovery.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-yellow" href="#download">Download the App</a>
-            <a class="btn btn-blue-outline" href="#videos">Watch Gameplay</a>
+            <a href="#download" class="btn btn-primary">Download Animal Explorer</a>
+            <a href="#gameplay" class="btn btn-secondary">Watch Gameplay</a>
           </div>
 
-          <div class="trust-badges">
+          <div class="hero-badges">
             <span>No Ads</span>
-            <span>Offline-Friendly</span>
-            <span>No Account Needed</span>
-            <span>Parent-Focused</span>
+            <span>Offline Friendly</span>
+            <span>No Account Required</span>
+            <span>Parent Focused</span>
           </div>
         </div>
 
-        <div class="hero-mascot-card">
-          <div class="mascot-glow"></div>
+        <div class="hero-visual">
+          <div class="hero-mascot-wrap">
+            <div class="hero-glow"></div>
+            <img
+              src="images/cubbylearn-mascot.png"
+              alt="CubbyLearn panda mascot"
+              class="hero-mascot"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-light">
+      <div class="container intro-card">
+        <div class="intro-game">
           <img
-            src="images/logo.png"
-            alt="CubbyLearn mascot"
-            class="hero-mascot"
+            src="images/animal-explorer-icon.png"
+            alt="Animal Explorer icon"
+            class="game-icon"
+          />
+          <div>
+            <div class="section-tag blue">Featured Game</div>
+            <h2>Animal Explorer</h2>
+            <p>
+              A bright, approachable game where children can explore animals and build
+              familiarity through simple interactions. Easy to understand, fun to use,
+              and built to feel safe and focused for parents.
+            </p>
+          </div>
+        </div>
+
+        <div class="intro-splash">
+          <img
+            src="images/animal-explorer-screenshot-1.webp"
+            alt="Animal Explorer splash screen"
+            class="phone-shot"
           />
         </div>
       </div>
     </section>
 
-    <section id="features" class="section section-light">
+    <section id="gameplay" class="section section-white">
       <div class="container">
-        <div class="section-intro center">
-          <div class="section-kicker green">Why CubbyLearn</div>
-          <h2>Built around playful learning, simple design, and parent trust.</h2>
+        <div class="section-heading center">
+          <div class="section-tag green">Gameplay</div>
+          <h2>See the game in action</h2>
           <p>
-            The site should feel like an extension of the app brand: cheerful, welcoming,
-            colorful, and easy to understand.
+            Parents should be able to understand the experience fast. This section gives
+            a quick visual tour of the app screens and gameplay flow.
           </p>
         </div>
 
-        <div class="card-grid">
-          <article class="feature-card feature-card-blue">
-            <div class="feature-icon">🦁</div>
-            <h3>Explore Animals</h3>
-            <p>
-              Meet animals through bright visuals, playful interaction, and simple learning moments.
-            </p>
+        <div class="gameplay-grid">
+          <article class="screen-card">
+            <img src="images/animal-explorer-screenshot-2.webp" alt="Navigation tiles screen" class="phone-shot" />
+            <h3>Navigation</h3>
+            <p>Clear tile-based navigation built for young learners.</p>
           </article>
 
-          <article class="feature-card feature-card-yellow">
-            <div class="feature-icon">▶</div>
-            <h3>Watch Gameplay</h3>
-            <p>
-              Let parents see the app in action before downloading.
-            </p>
+          <article class="screen-card">
+            <img src="images/animal-explorer-screenshot-3.webp" alt="Learn mode screen" class="phone-shot" />
+            <h3>Learn</h3>
+            <p>Explore animals through simple, visual discovery.</p>
           </article>
 
-          <article class="feature-card feature-card-green">
-            <div class="feature-icon">🛡</div>
-            <h3>Parent-Friendly</h3>
-            <p>
-              Highlight no ads, offline play, and a clear, reassuring experience.
-            </p>
+          <article class="screen-card">
+            <img src="images/animal-explorer-screenshot-4.webp" alt="Listen mode screen" class="phone-shot" />
+            <h3>Listen</h3>
+            <p>Hear the animal name and connect sound to image.</p>
           </article>
+
+          <article class="screen-card">
+            <img src="images/animal-explorer-screenshot-5.webp" alt="Speak mode screen" class="phone-shot" />
+            <h3>Speak</h3>
+            <p>Encourage active participation by saying the animal name.</p>
+          </article>
+
+          <article class="screen-card">
+            <img src="images/animal-explorer-screenshot-6.webp" alt="Find mode screen" class="phone-shot" />
+            <h3>Find</h3>
+            <p>Tap the right animal as cards move around the screen.</p>
+          </article>
+
+          <article class="screen-card">
+            <img src="images/animal-explorer-screenshot-7.webp" alt="Match mode screen" class="phone-shot" />
+            <h3>Match</h3>
+            <p>Build recognition with a simple memory-style matching game.</p>
+          </article>
+        </div>
+
+        <div class="video-cta">
+          <a href="#" class="btn btn-primary">Add Gameplay Video Here</a>
         </div>
       </div>
     </section>
 
-    <section id="videos" class="section section-jungle">
-      <div class="container two-column">
-        <div class="section-copy">
-          <div class="section-kicker blue">Gameplay Preview</div>
-          <h2>Show the app in action.</h2>
+    <section id="features" class="section section-jungle">
+      <div class="container">
+        <div class="section-heading center">
+          <div class="section-tag yellow">Game Modes</div>
+          <h2>How kids play</h2>
           <p>
-            A short trailer and a few focused clips will do a better job than paragraphs of explanation.
+            Animal Explorer is built around a handful of simple modes that keep the
+            experience varied without becoming confusing.
           </p>
-
-          <ul class="check-list">
-            <li>Preview the game experience</li>
-            <li>Show the style and feel of the app</li>
-            <li>Support download decisions</li>
-            <li>Give videos a real home on the site</li>
-          </ul>
         </div>
 
-        <div class="video-stack">
-          <div class="video-card">
-            <img src="images/splash_l.webp" alt="Gameplay preview" />
-            <div class="video-copy">
-              <h3>Featured Trailer</h3>
-              <p>Main preview video placeholder</p>
-            </div>
-          </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <img src="images/feature-learn-icon.png" alt="Learn mode icon" class="feature-icon" />
+            <h3>Learn</h3>
+            <p>Meet animals and explore them through bright visuals and simple interaction.</p>
+          </article>
 
-          <div class="video-card">
-            <img src="images/tiles_l.webp" alt="Gameplay mode preview" />
-            <div class="video-copy">
-              <h3>Mode Preview</h3>
-              <p>Short focused gameplay clip placeholder</p>
-            </div>
-          </div>
+          <article class="feature-card">
+            <img src="images/feature-listen-icon.png" alt="Listen mode icon" class="feature-icon" />
+            <h3>Listen</h3>
+            <p>Hear the animal name and build recognition through listening.</p>
+          </article>
+
+          <article class="feature-card">
+            <img src="images/feature-speak-icon.png" alt="Speak mode icon" class="feature-icon" />
+            <h3>Speak</h3>
+            <p>Encourage language practice by saying the correct animal name.</p>
+          </article>
+
+          <article class="feature-card">
+            <img src="images/feature-find-icon.png" alt="Find mode icon" class="feature-icon" />
+            <h3>Find</h3>
+            <p>Tap the right animal quickly in a playful moving-card challenge.</p>
+          </article>
+
+          <article class="feature-card">
+            <img src="images/feature-match-icon.png" alt="Match mode icon" class="feature-icon" />
+            <h3>Match</h3>
+            <p>Use a simple matching game to reinforce memory and recognition.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="parents" class="section section-light">
-      <div class="container two-column">
-        <div>
-          <div class="section-kicker green">For Parents</div>
-          <h2>Clear reassurance matters.</h2>
+      <div class="container parents-layout">
+        <div class="parents-copy">
+          <div class="section-tag blue">For Parents</div>
+          <h2>Designed to feel simple, safe, and reassuring</h2>
           <p>
-            Parents want to know what the app is trying to do, whether it works offline,
-            whether it includes ads, and what happens with data.
+            CubbyLearn is meant to be a positive early-learning experience, not a noisy,
+            cluttered app full of friction. The homepage should make those promises clear.
           </p>
 
-          <div class="info-grid">
-            <div class="info-box">
-              <h3>Learning Purpose</h3>
-              <p>Explain the app’s goal in simple, practical language.</p>
-            </div>
-
-            <div class="info-box">
+          <div class="trust-grid">
+            <article class="trust-card">
+              <img src="images/trust-no-ads.png" alt="No ads" class="trust-image" />
               <h3>No Ads</h3>
-              <p>Make this obvious and easy to spot.</p>
-            </div>
+              <p>No ad interruptions breaking the learning flow.</p>
+            </article>
 
-            <div class="info-box">
-              <h3>Offline-Friendly</h3>
-              <p>Show that the experience does not depend on constant internet use.</p>
-            </div>
+            <article class="trust-card">
+              <img src="images/trust-offline.png" alt="Offline play" class="trust-image" />
+              <h3>Offline Play</h3>
+              <p>Use the game without needing a constant internet connection.</p>
+            </article>
 
-            <div class="info-box">
-              <h3>No Stored Personal Data</h3>
-              <p>Use clear trust language, not vague legal fluff.</p>
-            </div>
+            <article class="trust-card">
+              <img src="images/trust-privacy.png" alt="Privacy focused" class="trust-image" />
+              <h3>Privacy Focused</h3>
+              <p>Clear reassurance around no stored personal data.</p>
+            </article>
+
+            <article class="trust-card">
+              <img src="images/trust-account.png" alt="No account required" class="trust-image" />
+              <h3>No Account Required</h3>
+              <p>Get into the game quickly without unnecessary setup.</p>
+            </article>
+
+            <article class="trust-card">
+              <img src="images/trust-locked.png" alt="Locked mode" class="trust-image" />
+              <h3>Locked Mode</h3>
+              <p>Helps prevent accidental exits during play.</p>
+            </article>
           </div>
         </div>
-
-        <aside class="trust-panel">
-          <div class="trust-panel-inner">
-            <div class="section-kicker yellow">Parent-Friendly by Design</div>
-            <h3>Simple, safe, focused.</h3>
-            <ul class="trust-list">
-              <li>Bright and approachable experience</li>
-              <li>Easy to understand and use</li>
-              <li>Offline-friendly play</li>
-              <li>Clear privacy messaging</li>
-            </ul>
-          </div>
-        </aside>
       </div>
     </section>
 
-    <section id="updates" class="section section-white">
-      <div class="container updates-grid">
-        <div class="updates-box">
-          <div class="section-kicker green">Latest Updates</div>
-          <h2>Keep CubbyLearn feeling active.</h2>
+    <section id="download" class="section section-download">
+      <div class="container download-card">
+        <div class="download-copy">
+          <div class="section-tag yellow">Download</div>
+          <h2>Start exploring with Animal Explorer</h2>
           <p>
-            Use this area for release notes, new animals, gameplay previews, and feature improvements.
+            Download the first CubbyLearn game and give kids a bright, simple world of
+            animal discovery.
           </p>
-
-          <div class="update-item">New animals and content packs</div>
-          <div class="update-item">Gameplay preview videos and highlights</div>
-          <div class="update-item">App improvements and upcoming additions</div>
+          <a href="#" class="btn btn-primary btn-large">Download for Android</a>
         </div>
 
-        <div id="download" class="download-box">
-          <div class="section-kicker yellow">Download</div>
-          <h2>Start Exploring with CubbyLearn</h2>
-          <p>
-            Keep the primary CTA big, friendly, and impossible to miss.
-          </p>
-
-          <a class="btn btn-download" href="#">Download for Android</a>
-          <a class="btn btn-outline" href="#videos">Watch Preview First</a>
+        <div class="download-visual">
+          <img
+            src="images/animal-explorer-icon.png"
+            alt="Animal Explorer icon"
+            class="download-icon"
+          />
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <div class="footer-brand-lockup">
-          <img src="images/logo.png" alt="CubbyLearn icon" class="footer-icon" />
-          <div class="footer-brand-text">
-            <div class="footer-brand">CubbyLearn</div>
-            <p>A playful animal learning experience for early learners.</p>
-          </div>
-        </div>
+    <div class="container footer-layout">
+      <div class="footer-brand">
+        <img src="images/cubbylearn-logo.png" alt="CubbyLearn" class="footer-logo" />
+        <p>Playful learning worlds for curious young minds.</p>
       </div>
 
-      <div>
-        <h4>Explore</h4>
-        <a href="#features">Features</a>
-        <a href="#videos">Videos</a>
-      </div>
-
-      <div>
-        <h4>Parents</h4>
-        <a href="#parents">Why it Helps</a>
-        <a href="#">Privacy</a>
-      </div>
-
-      <div>
-        <h4>Connect</h4>
-        <a href="#">YouTube</a>
-        <a href="#">Instagram</a>
-        <a href="#">Contact</a>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#features">Modes</a>
+        <a href="#parents">Parents</a>
+        <a href="#download">Download</a>
       </div>
     </div>
   </footer>
