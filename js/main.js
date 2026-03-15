@@ -1,17 +1,18 @@
-// CubbyLearn Website JS
-// Keep this file small and simple
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector(".nav-toggle");
+  const nav = document.querySelector(".nav-links");
 
-document.addEventListener("DOMContentLoaded", () => {
+  if (toggle && nav) {
+    toggle.addEventListener("click", function () {
+      const isOpen = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
 
-  console.log("CubbyLearn site loaded");
-
-  // Play button placeholder behavior
-  const playButton = document.querySelector(".play-button");
-
-  if (playButton) {
-    playButton.addEventListener("click", () => {
-      alert("Gameplay preview video coming soon!");
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", function () {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      });
     });
   }
-
 });
