@@ -3,309 +3,168 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CubbyLearn | Animal Explorer</title>
-  <meta
-    name="description"
-    content="CubbyLearn creates playful learning games for early learners. Discover Animal Explorer, watch gameplay, and download the app."
-  />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+  <title>CubbyLearn | Animal Explorer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container nav">
-      <a href="#top" class="brand">
-        <img src="images/cubbylearn-logo.png" alt="CubbyLearn" class="brand-logo" />
-      </a>
 
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+<header class="header">
+  <div class="container nav">
+    <img src="images/cubbylearn-logo.png" class="logo" />
 
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#gameplay">Gameplay</a>
-        <a href="#features">Modes</a>
-        <a href="#parents">Parents</a>
-        <a href="#download" class="nav-download">Download</a>
-      </nav>
-    </div>
-  </header>
+    <nav>
+      <a href="#game">Game</a>
+      <a href="#video">Video</a>
+      <a href="#parents">Parents</a>
+      <a href="#download" class="btn small">Download</a>
+    </nav>
+  </div>
+</header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="hero-bg"></div>
-      <div class="hero-overlay"></div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
 
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">CubbyLearn presents</div>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <img src="images/animal-explorer-banner.png" class="hero-banner"/>
 
-          <img
-            src="images/animal-explorer-banner.png"
-            alt="Animal Explorer"
-            class="hero-banner"
-          />
+      <h1>Playful animal learning for curious young explorers</h1>
 
-          <h1 class="hero-title">
-            Playful animal learning for curious young explorers.
-          </h1>
+      <p>
+        CubbyLearn creates simple, joyful learning games for kids.
+        Animal Explorer helps children discover animals through play.
+      </p>
 
-          <p class="hero-text">
-            CubbyLearn is a brand built around simple, joyful learning games for young
-            children. Animal Explorer is the first game in that world — designed to help
-            kids learn animals through play, listening, speaking, matching, and discovery.
-          </p>
-
-          <div class="hero-actions">
-            <a href="#download" class="btn btn-primary">Download Animal Explorer</a>
-            <a href="#gameplay" class="btn btn-secondary">Watch Gameplay</a>
-          </div>
-
-          <div class="hero-badges">
-            <span>No Ads</span>
-            <span>Offline Friendly</span>
-            <span>No Account Required</span>
-            <span>Parent Focused</span>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-mascot-wrap">
-            <div class="hero-glow"></div>
-            <img
-              src="images/cubbylearn-mascot.png"
-              alt="CubbyLearn panda mascot"
-              class="hero-mascot"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section section-light">
-      <div class="container intro-card">
-        <div class="intro-game">
-          <img
-            src="images/animal-explorer-icon.png"
-            alt="Animal Explorer icon"
-            class="game-icon"
-          />
-          <div>
-            <div class="section-tag blue">Featured Game</div>
-            <h2>Animal Explorer</h2>
-            <p>
-              A bright, approachable game where children can explore animals and build
-              familiarity through simple interactions. Easy to understand, fun to use,
-              and built to feel safe and focused for parents.
-            </p>
-          </div>
-        </div>
-
-        <div class="intro-splash">
-          <img
-            src="images/animal-explorer-screenshot-1.webp"
-            alt="Animal Explorer splash screen"
-            class="phone-shot"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section id="gameplay" class="section section-white">
-      <div class="container">
-        <div class="section-heading center">
-          <div class="section-tag green">Gameplay</div>
-          <h2>See the game in action</h2>
-          <p>
-            Parents should be able to understand the experience fast. This section gives
-            a quick visual tour of the app screens and gameplay flow.
-          </p>
-        </div>
-
-        <div class="gameplay-grid">
-          <article class="screen-card">
-            <img src="images/animal-explorer-screenshot-2.webp" alt="Navigation tiles screen" class="phone-shot" />
-            <h3>Navigation</h3>
-            <p>Clear tile-based navigation built for young learners.</p>
-          </article>
-
-          <article class="screen-card">
-            <img src="images/animal-explorer-screenshot-3.webp" alt="Learn mode screen" class="phone-shot" />
-            <h3>Learn</h3>
-            <p>Explore animals through simple, visual discovery.</p>
-          </article>
-
-          <article class="screen-card">
-            <img src="images/animal-explorer-screenshot-4.webp" alt="Listen mode screen" class="phone-shot" />
-            <h3>Listen</h3>
-            <p>Hear the animal name and connect sound to image.</p>
-          </article>
-
-          <article class="screen-card">
-            <img src="images/animal-explorer-screenshot-5.webp" alt="Speak mode screen" class="phone-shot" />
-            <h3>Speak</h3>
-            <p>Encourage active participation by saying the animal name.</p>
-          </article>
-
-          <article class="screen-card">
-            <img src="images/animal-explorer-screenshot-6.webp" alt="Find mode screen" class="phone-shot" />
-            <h3>Find</h3>
-            <p>Tap the right animal as cards move around the screen.</p>
-          </article>
-
-          <article class="screen-card">
-            <img src="images/animal-explorer-screenshot-7.webp" alt="Match mode screen" class="phone-shot" />
-            <h3>Match</h3>
-            <p>Build recognition with a simple memory-style matching game.</p>
-          </article>
-        </div>
-
-        <div class="video-cta">
-          <a href="#" class="btn btn-primary">Add Gameplay Video Here</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="features" class="section section-jungle">
-      <div class="container">
-        <div class="section-heading center">
-          <div class="section-tag yellow">Game Modes</div>
-          <h2>How kids play</h2>
-          <p>
-            Animal Explorer is built around a handful of simple modes that keep the
-            experience varied without becoming confusing.
-          </p>
-        </div>
-
-        <div class="feature-grid">
-          <article class="feature-card">
-            <img src="images/feature-learn-icon.png" alt="Learn mode icon" class="feature-icon" />
-            <h3>Learn</h3>
-            <p>Meet animals and explore them through bright visuals and simple interaction.</p>
-          </article>
-
-          <article class="feature-card">
-            <img src="images/feature-listen-icon.png" alt="Listen mode icon" class="feature-icon" />
-            <h3>Listen</h3>
-            <p>Hear the animal name and build recognition through listening.</p>
-          </article>
-
-          <article class="feature-card">
-            <img src="images/feature-speak-icon.png" alt="Speak mode icon" class="feature-icon" />
-            <h3>Speak</h3>
-            <p>Encourage language practice by saying the correct animal name.</p>
-          </article>
-
-          <article class="feature-card">
-            <img src="images/feature-find-icon.png" alt="Find mode icon" class="feature-icon" />
-            <h3>Find</h3>
-            <p>Tap the right animal quickly in a playful moving-card challenge.</p>
-          </article>
-
-          <article class="feature-card">
-            <img src="images/feature-match-icon.png" alt="Match mode icon" class="feature-icon" />
-            <h3>Match</h3>
-            <p>Use a simple matching game to reinforce memory and recognition.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="parents" class="section section-light">
-      <div class="container parents-layout">
-        <div class="parents-copy">
-          <div class="section-tag blue">For Parents</div>
-          <h2>Designed to feel simple, safe, and reassuring</h2>
-          <p>
-            CubbyLearn is meant to be a positive early-learning experience, not a noisy,
-            cluttered app full of friction. The homepage should make those promises clear.
-          </p>
-
-          <div class="trust-grid">
-            <article class="trust-card">
-              <img src="images/trust-no-ads.png" alt="No ads" class="trust-image" />
-              <h3>No Ads</h3>
-              <p>No ad interruptions breaking the learning flow.</p>
-            </article>
-
-            <article class="trust-card">
-              <img src="images/trust-offline.png" alt="Offline play" class="trust-image" />
-              <h3>Offline Play</h3>
-              <p>Use the game without needing a constant internet connection.</p>
-            </article>
-
-            <article class="trust-card">
-              <img src="images/trust-privacy.png" alt="Privacy focused" class="trust-image" />
-              <h3>Privacy Focused</h3>
-              <p>Clear reassurance around no stored personal data.</p>
-            </article>
-
-            <article class="trust-card">
-              <img src="images/trust-account.png" alt="No account required" class="trust-image" />
-              <h3>No Account Required</h3>
-              <p>Get into the game quickly without unnecessary setup.</p>
-            </article>
-
-            <article class="trust-card">
-              <img src="images/trust-locked.png" alt="Locked mode" class="trust-image" />
-              <h3>Locked Mode</h3>
-              <p>Helps prevent accidental exits during play.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="download" class="section section-download">
-      <div class="container download-card">
-        <div class="download-copy">
-          <div class="section-tag yellow">Download</div>
-          <h2>Start exploring with Animal Explorer</h2>
-          <p>
-            Download the first CubbyLearn game and give kids a bright, simple world of
-            animal discovery.
-          </p>
-          <a href="#" class="btn btn-primary btn-large">Download for Android</a>
-        </div>
-
-        <div class="download-visual">
-          <img
-            src="images/animal-explorer-icon.png"
-            alt="Animal Explorer icon"
-            class="download-icon"
-          />
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-layout">
-      <div class="footer-brand">
-        <img src="images/cubbylearn-logo.png" alt="CubbyLearn" class="footer-logo" />
-        <p>Playful learning worlds for curious young minds.</p>
+      <div class="hero-buttons">
+        <a href="#download" class="btn primary">Download</a>
+        <a href="#video" class="btn secondary">Watch Gameplay</a>
       </div>
 
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#gameplay">Gameplay</a>
-        <a href="#features">Modes</a>
-        <a href="#parents">Parents</a>
-        <a href="#download">Download</a>
+      <div class="badges">
+        <span>No Ads</span>
+        <span>Offline</span>
+        <span>No Account</span>
       </div>
     </div>
-  </footer>
 
-  <script src="js/main.js"></script>
+    <div class="hero-image">
+      <img src="images/cubbylearn-mascot.png" />
+    </div>
+  </div>
+</section>
+
+<!-- GAME -->
+<section id="game" class="section">
+  <div class="container two-col">
+    <div>
+      <h2>Animal Explorer</h2>
+      <p>
+        A simple and engaging way for kids to explore animals through
+        listening, speaking, matching, and play.
+      </p>
+    </div>
+
+    <img src="images/animal-explorer-screenshot-1.webp" class="phone"/>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section id="video" class="section light">
+  <div class="container center">
+    <h2>Watch Animal Explorer in Action</h2>
+
+    <div class="video-wrap">
+      <video controls poster="images/animal-explorer-screenshot-1.webp">
+        <source src="videos/trailer.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- GAMEPLAY GRID -->
+<section class="section">
+  <div class="container grid">
+
+    <div class="card">
+      <img src="images/animal-explorer-screenshot-3.webp" class="phone"/>
+      <h3>Learn</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/animal-explorer-screenshot-4.webp" class="phone"/>
+      <h3>Listen</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/animal-explorer-screenshot-5.webp" class="phone"/>
+      <h3>Speak</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/animal-explorer-screenshot-6.webp" class="phone"/>
+      <h3>Find</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/animal-explorer-screenshot-7.webp" class="phone"/>
+      <h3>Match</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- PARENTS -->
+<section id="parents" class="section light">
+  <div class="container grid">
+
+    <div class="card">
+      <img src="images/trust-no-ads.png" />
+      <h3>No Ads</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/trust-offline.png" />
+      <h3>Offline Play</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/trust-privacy.png" />
+      <h3>No Data Storage</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/trust-account.png" />
+      <h3>No Account</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="download" class="section download">
+  <div class="container center">
+    <h2>Download Animal Explorer</h2>
+
+    <img src="images/animal-explorer-icon.png" class="app-icon"/>
+
+    <a href="#" class="btn primary big">Download for Android</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <img src="images/cubbylearn-logo.png" class="logo"/>
+  </div>
+</footer>
+
 </body>
 </html>
