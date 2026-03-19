@@ -327,173 +327,179 @@
       background: linear-gradient(180deg, #f5f8ef 0%, #f8faf5 100%);
       border: 1px solid var(--line);
       border-radius: 24px;
-      padding: 34px 34px 30px;
+      padding: 30px 28px;
       box-shadow: 0 8px 24px rgba(20, 48, 86, 0.05);
-    }
-
-    .screens-header {
-      max-width: 940px;
-      margin: 0 0 28px;
-      text-align: left;
-    }
-
-    .screens-header h2 {
-      max-width: 760px;
-    }
-
-    .screens-header p {
-      max-width: 660px;
     }
 
     .preview-layout {
       display: grid;
-      grid-template-columns: minmax(320px, 360px) minmax(0, 1fr);
+      grid-template-columns: minmax(320px, 1fr) 440px;
       gap: 34px;
-      align-items: center;
+      align-items: start;
+    }
+
+    .preview-copy {
+      padding: 2px 6px 0 6px;
+    }
+
+    .preview-copy .eyebrow {
+      margin-bottom: 18px;
+    }
+
+    .preview-copy h2 {
+      margin: 0;
+      max-width: 420px;
+      font-size: 58px;
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      color: var(--blue);
+    }
+
+    .preview-copy p {
+      margin: 28px 0 0;
+      max-width: 390px;
+      font-size: 18px;
+      line-height: 1.06;
+      font-weight: 700;
+      color: var(--blue);
     }
 
     .preview-support {
+      margin-top: 28px;
+      max-width: 390px;
       display: grid;
-      gap: 14px;
-      align-content: center;
+      gap: 12px;
     }
 
     .preview-support-item {
       background: #ffffff;
       border: 1px solid rgba(6, 51, 97, 0.08);
       border-radius: 14px;
-      padding: 18px 18px 18px 20px;
+      padding: 16px 16px 16px 14px;
       display: grid;
-      grid-template-columns: 34px minmax(0, 1fr);
+      grid-template-columns: 28px minmax(0, 1fr);
       gap: 14px;
       align-items: center;
       box-shadow: 0 4px 12px rgba(20, 48, 86, 0.04);
     }
 
     .preview-support-icon {
-      width: 34px;
-      height: 34px;
+      width: 28px;
+      height: 28px;
       border-radius: 999px;
       background: #edf4e2;
       border: 1px solid rgba(134, 188, 47, 0.28);
       color: var(--blue);
       display: grid;
       place-items: center;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 800;
       line-height: 1;
     }
 
     .preview-support-text {
       font-size: 18px;
-      line-height: 1.32;
+      line-height: 1.2;
       font-weight: 700;
       color: var(--blue);
     }
 
-    .preview-carousel-wrap {
+    .preview-stage {
+      position: relative;
+      min-height: 560px;
       display: flex;
-      justify-content: flex-end;
-      min-width: 0;
+      align-items: center;
+      justify-content: center;
     }
 
-    .carousel-card {
+    .preview-device-card {
       width: 100%;
-      max-width: 620px;
+      max-width: 384px;
       background: #ffffff;
-      border: 1px solid rgba(6, 51, 97, 0.08);
+      border: 1px solid rgba(6, 51, 97, 0.07);
       border-radius: 20px;
-      padding: 20px 22px 18px;
+      padding: 18px 18px 14px;
       box-shadow: 0 8px 20px rgba(20, 48, 86, 0.05);
     }
 
-    .carousel-stage {
-      display: grid;
-      grid-template-columns: 56px minmax(0, 1fr) 56px;
-      gap: 12px;
-      align-items: center;
+    .preview-device-shell {
+      width: 100%;
+      background: #f4f6ef;
+      border: 1px solid rgba(6, 51, 97, 0.08);
+      border-radius: 16px;
+      padding: 12px;
     }
 
-    .carousel-btn {
-      width: 52px;
-      height: 52px;
+    .preview-device-frame {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #ffffff;
+      border: 1px solid rgba(6, 51, 97, 0.08);
+    }
+
+    .preview-device-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .preview-caption {
+      text-align: center;
+      margin-top: 14px;
+      color: var(--text-soft);
+      font-size: 14px;
+      line-height: 1.4;
+      min-height: 20px;
+    }
+
+    .preview-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .preview-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      border: none;
+      padding: 0;
+      background: rgba(6, 51, 97, 0.18);
+      cursor: pointer;
+    }
+
+    .preview-dot.active {
+      background: var(--blue);
+    }
+
+    .preview-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 42px;
+      height: 42px;
       border-radius: 999px;
       border: 1px solid rgba(6, 51, 97, 0.08);
       background: #ffffff;
       color: var(--blue);
-      font-size: 30px;
+      font-size: 28px;
       font-weight: 700;
-      cursor: pointer;
       display: grid;
       place-items: center;
+      cursor: pointer;
       box-shadow: 0 4px 10px rgba(20, 48, 86, 0.05);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      z-index: 2;
     }
 
-    .carousel-btn:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 8px 14px rgba(20, 48, 86, 0.08);
+    .preview-arrow.prev {
+      left: 8px;
     }
 
-    .carousel-viewport {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-width: 0;
-    }
-
-    .carousel-slide {
-      width: 100%;
-      max-width: 300px;
-      aspect-ratio: 9 / 16;
-      background: #f8faf5;
-      border: 1px solid rgba(6, 51, 97, 0.08);
-      border-radius: 18px;
-      padding: 10px;
-      display: grid;
-      place-items: center;
-    }
-
-    .carousel-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      border-radius: 12px;
-      background: #ffffff;
-    }
-
-    .carousel-meta {
-      padding-top: 16px;
-      text-align: center;
-    }
-
-    .carousel-caption {
-      color: var(--text-soft);
-      font-size: 14px;
-      line-height: 1.5;
-      min-height: 22px;
-    }
-
-    .carousel-dots {
-      display: flex;
-      justify-content: center;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-top: 12px;
-    }
-
-    .carousel-dot {
-      width: 10px;
-      height: 10px;
-      border: none;
-      border-radius: 999px;
-      background: rgba(6, 51, 97, 0.18);
-      cursor: pointer;
-      padding: 0;
-    }
-
-    .carousel-dot.active {
-      background: var(--blue);
+    .preview-arrow.next {
+      right: 8px;
     }
 
     #gameplay {
@@ -614,6 +620,10 @@
     }
 
     @media (max-width: 1100px) {
+      .preview-copy h2 {
+        font-size: 50px;
+      }
+
       .modes-wrap {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
@@ -631,29 +641,33 @@
         align-self: center;
       }
 
-      .screens-shell {
-        padding: 28px 24px 24px;
-      }
-
       .preview-layout {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 28px;
       }
 
-      .preview-carousel-wrap {
-        justify-content: center;
+      .preview-copy,
+      .preview-copy h2,
+      .preview-copy p,
+      .preview-support {
+        max-width: none;
       }
 
-      .screens-header {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+      .preview-copy h2 {
+        font-size: 44px;
       }
 
-      .screens-header p,
-      .screens-header h2 {
-        margin-left: auto;
-        margin-right: auto;
+      .preview-stage {
+        min-height: 0;
+        padding: 0 26px;
+      }
+
+      .preview-arrow.prev {
+        left: 0;
+      }
+
+      .preview-arrow.next {
+        right: 0;
       }
 
       #gameplay .section-head h2 {
@@ -681,26 +695,39 @@
         font-size: 26px;
       }
 
-      .carousel-card {
-        max-width: 100%;
-        padding: 18px 16px 16px;
+      .preview-copy h2 {
+        font-size: 36px;
+        max-width: 320px;
       }
 
-      .carousel-stage {
-        grid-template-columns: 1fr;
-        gap: 14px;
-      }
-
-      .carousel-btn {
-        display: none;
-      }
-
-      .carousel-slide {
-        max-width: 280px;
+      .preview-copy p {
+        font-size: 16px;
+        line-height: 1.18;
       }
 
       .preview-support-text {
         font-size: 17px;
+      }
+
+      .preview-device-card {
+        max-width: 340px;
+      }
+
+      .preview-stage {
+        padding: 0;
+      }
+
+      .preview-arrow {
+        width: 40px;
+        height: 40px;
+      }
+
+      .preview-arrow.prev {
+        left: -2px;
+      }
+
+      .preview-arrow.next {
+        right: -2px;
       }
 
       .modes-wrap {
@@ -745,29 +772,45 @@
         font-size: 22px;
       }
 
-      #screens {
-        padding-bottom: 42px;
-      }
-
       .screens-shell {
         padding: 22px 16px 18px;
         border-radius: 18px;
       }
 
+      .preview-copy h2 {
+        font-size: 28px;
+        max-width: 250px;
+      }
+
+      .preview-copy p {
+        margin-top: 20px;
+      }
+
       .preview-support-item {
-        grid-template-columns: 30px minmax(0, 1fr);
+        padding: 14px 14px 14px 12px;
+        grid-template-columns: 26px minmax(0, 1fr);
         gap: 12px;
-        padding: 16px;
       }
 
       .preview-support-icon {
-        width: 30px;
-        height: 30px;
-        font-size: 13px;
+        width: 26px;
+        height: 26px;
+        font-size: 12px;
       }
 
       .preview-support-text {
-        font-size: 16px;
+        font-size: 15px;
+      }
+
+      .preview-device-card {
+        max-width: 300px;
+        padding: 14px 14px 12px;
+      }
+
+      .preview-arrow {
+        width: 38px;
+        height: 38px;
+        font-size: 24px;
       }
 
       .download-card {
@@ -796,7 +839,7 @@
         </div>
       </div>
 
-      <a class="play-badge" href="#download" aria-label="Get it on Google Play">
+      <a class="play-badge" href="download.html" aria-label="Go to download page">
         <img src="https://raw.githubusercontent.com/cyrusphipps/cubbylearn-site/main/images/GetItOnGooglePlay_Badge_Web_color_English.png" alt="Get it on Google Play">
       </a>
     </header>
@@ -820,7 +863,7 @@
           </div>
 
           <div class="hero-actions">
-            <a class="play-badge" href="#download" aria-label="Get it on Google Play">
+            <a class="play-badge" href="download.html" aria-label="Go to download page">
               <img src="https://raw.githubusercontent.com/cyrusphipps/cubbylearn-site/main/images/GetItOnGooglePlay_Badge_Web_color_English.png" alt="Get it on Google Play">
             </a>
           </div>
@@ -852,7 +895,7 @@
           </div>
         </div>
 
-        <a class="play-badge" href="#" aria-label="Get it on Google Play">
+        <a class="play-badge" href="download.html" aria-label="Go to download page">
           <img src="https://raw.githubusercontent.com/cyrusphipps/cubbylearn-site/main/images/GetItOnGooglePlay_Badge_Web_color_English.png" alt="Get it on Google Play">
         </a>
       </div>
@@ -860,51 +903,47 @@
 
     <section class="section inner" id="screens">
       <div class="screens-shell">
-        <div class="section-head screens-header">
-          <div class="eyebrow">Preview the experience</div>
-          <h2>A playful learning experience using sight, sound, and speech to build memory</h2>
-          <p>
-            Use pictures, sound, speech, and memory to learn animal names. New animals unlock as you play, with images gradually increasing in difficulty.
-          </p>
-        </div>
-
         <div class="preview-layout">
-          <div class="preview-support">
-            <div class="preview-support-item">
-              <div class="preview-support-icon">1</div>
-              <div class="preview-support-text">Five game modes that build recognition in different ways</div>
-            </div>
+          <div class="preview-copy">
+            <div class="eyebrow">Preview the experience</div>
+            <h2>Use sight, sound and speech to build memory</h2>
+            <p>
+              A playful experience to learn animal names. New animals unlock, and images gradually increase in difficult for dynamic play
+            </p>
 
-            <div class="preview-support-item">
-              <div class="preview-support-icon">2</div>
-              <div class="preview-support-text">Screen-lock mode to help prevent accidental exits</div>
-            </div>
+            <div class="preview-support">
+              <div class="preview-support-item">
+                <div class="preview-support-icon">1</div>
+                <div class="preview-support-text">Five game modes that build recognition in different ways</div>
+              </div>
 
-            <div class="preview-support-item">
-              <div class="preview-support-icon">3</div>
-              <div class="preview-support-text">Unlockable content to learn and discover</div>
+              <div class="preview-support-item">
+                <div class="preview-support-icon">2</div>
+                <div class="preview-support-text">Screen-lock mode to help prevent accidental exits</div>
+              </div>
+
+              <div class="preview-support-item">
+                <div class="preview-support-icon">3</div>
+                <div class="preview-support-text">Unlockable content to learn and discover</div>
+              </div>
             </div>
           </div>
 
-          <div class="preview-carousel-wrap">
-            <div class="carousel-card">
-              <div class="carousel-stage">
-                <button class="carousel-btn" id="prevBtn" aria-label="Previous screenshot">‹</button>
+          <div class="preview-stage">
+            <button class="preview-arrow prev" id="prevBtn" aria-label="Previous screenshot">‹</button>
 
-                <div class="carousel-viewport">
-                  <div class="carousel-slide">
-                    <img id="carouselImage" src="" alt="Animal Explorer screenshot">
-                  </div>
+            <div class="preview-device-card">
+              <div class="preview-device-shell">
+                <div class="preview-device-frame">
+                  <img id="carouselImage" src="" alt="Animal Explorer screenshot">
                 </div>
-
-                <button class="carousel-btn" id="nextBtn" aria-label="Next screenshot">›</button>
               </div>
 
-              <div class="carousel-meta">
-                <div class="carousel-caption" id="carouselCaption">See all five game modes in action</div>
-                <div class="carousel-dots" id="carouselDots"></div>
-              </div>
+              <div class="preview-caption" id="carouselCaption">See all five game modes in action</div>
+              <div class="preview-dots" id="carouselDots"></div>
             </div>
+
+            <button class="preview-arrow next" id="nextBtn" aria-label="Next screenshot">›</button>
           </div>
         </div>
       </div>
@@ -959,14 +998,14 @@
           </div>
         </div>
 
-        <a class="play-badge" href="#download" aria-label="Get it on Google Play">
+        <a class="play-badge" href="download.html" aria-label="Go to download page">
           <img src="https://raw.githubusercontent.com/cyrusphipps/cubbylearn-site/main/images/GetItOnGooglePlay_Badge_Web_color_English.png" alt="Get it on Google Play">
         </a>
       </div>
 
       <div class="footer-links">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="mailto:contact@cubbylearn.com">Contact Us</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:cubbylearn@gmail.com">Contact Us</a>
       </div>
 
       <div class="legal">
@@ -988,11 +1027,11 @@
         },
         {
           src: "https://raw.githubusercontent.com/cyrusphipps/cubbylearn-site/main/images/animal-explorer-screenshot-2.webp",
-          caption: "Simple navigation built for quick recognition."
+          caption: "Listen and connect animal names to images."
         },
         {
           src: "https://raw.githubusercontent.com/cyrusphipps/cubbylearn-site/main/images/animal-explorer-screenshot-3.webp",
-          caption: "Use visual cues to explore and identify animals."
+          caption: "Find the correct animal using visual recognition."
         },
         {
           src: "https://raw.githubusercontent.com/cyrusphipps/cubbylearn-site/main/images/animal-explorer-screenshot-4.webp",
@@ -1024,7 +1063,7 @@
         dotsEl.innerHTML = "";
         slides.forEach((_, index) => {
           const dot = document.createElement("button");
-          dot.className = "carousel-dot" + (index === current ? " active" : "");
+          dot.className = "preview-dot" + (index === current ? " active" : "");
           dot.setAttribute("aria-label", "Go to screenshot " + (index + 1));
           dot.addEventListener("click", function () {
             current = index;
