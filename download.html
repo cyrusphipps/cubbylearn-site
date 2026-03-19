@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Not Available | CubbyLearn</title>
+  <meta http-equiv="refresh" content="10;url=http://www.cubbylearn.com" />
+  <style>
+    :root {
+      --text: #183456;
+      --text-soft: #5f6f82;
+      --line: #d9e2ec;
+      --bg: #f7faf4;
+      --card: #ffffff;
+      --heading: #063361;
+      --max-width: 860px;
+    }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Trebuchet MS", "Avenir Next", "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .page {
+      width: min(100%, var(--max-width));
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+
+    header {
+      margin-bottom: 32px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 38px;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      color: var(--heading);
+      font-weight: 700;
+    }
+
+    main {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 32px 28px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      font-size: 14px;
+      color: var(--text-soft);
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 28px 14px 40px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      main {
+        padding: 24px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Download Not Available</h1>
+    </header>
+
+    <main>
+      <p>Download not available yet. Stay tuned.</p>
+      <p>You will be directed back to cubbylearn.com in a few moments</p>
+    </main>
+
+    <footer>
+      CubbyLearn
+    </footer>
+  </div>
+
+  <script>
+    setTimeout(function () {
+      window.location.href = "http://www.cubbylearn.com";
+    }, 10000);
+  </script>
+</body>
+</html>
